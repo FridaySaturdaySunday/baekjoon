@@ -1,4 +1,4 @@
-package bj3003;
+package bj10430;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,14 +15,14 @@ public class Main {
 		
 		StringTokenizer st = new StringTokenizer(str, " ");
 		
-		int a = 1 - Integer.parseInt(st.nextToken());
-		int b = 1 - Integer.parseInt(st.nextToken());
-		int c = 2 - Integer.parseInt(st.nextToken());
-		int d = 2 - Integer.parseInt(st.nextToken());
-		int e = 2 - Integer.parseInt(st.nextToken());
-		int f = 8 - Integer.parseInt(st.nextToken());
+		int a = Integer.parseInt(st.nextToken());
+		int b = Integer.parseInt(st.nextToken());
+		int c = Integer.parseInt(st.nextToken());
 		
-		System.out.printf("%d %d %d %d %d %d", a,b,c,d,e,f);
+		System.out.println((a+b)%c);
+		System.out.println(((a%c)+(b%c))%c);
+		System.out.println((a*b)%c);
+		System.out.println(((a%c)*(b%c))%c);
 	}
 
 }
