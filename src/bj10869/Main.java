@@ -1,4 +1,4 @@
-package bj1008;
+package bj10869;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,10 +17,15 @@ public class Main {
 		StringTokenizer st = new StringTokenizer(str, " ");
 		
 		// nextToken(); -> 문자열 반환
-		Double a = Double.parseDouble(st.nextToken());
-		Double b = Double.parseDouble(st.nextToken());
+		int a = Integer.parseInt(st.nextToken());
+		int b = Integer.parseInt(st.nextToken());
 		
+		System.out.println(a+b);
+		System.out.println(a-b);
+		System.out.println(a*b);
 		System.out.println(a/b);
+		System.out.println(a%b);
+		
 	}
 
 }
