@@ -13,7 +13,6 @@ public class Main {
 		int a = Integer.parseInt(br.readLine());
 		
 		
-		
 	}
 
 }
