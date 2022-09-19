@@ -20,7 +20,7 @@ public class Main {
 		int prize;
 		
 		if(a==b && b==c) {
-			prize = 1000 + (a * 1000);
+			prize = 10000 + (a * 1000);
 		} else if (a==b) {
 			prize = 1000 + (a * 100);
 		} else if (b==c) {
