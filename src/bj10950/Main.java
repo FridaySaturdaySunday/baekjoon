@@ -13,8 +13,6 @@ public class Main {
 		
 		int a = Integer.parseInt(br.readLine());
 		
-		StringTokenizer st;
-		
 		// String : 할당된 공간이 변하지 않는 특성인 불변(Immutable)성
 		// StringBuilder, StringBuffer : 할당된 공간이 변하는 특성인 가변(mutable)성
 		
@@ -27,7 +25,7 @@ public class Main {
 		
 		for(int i=0; i<a; i++) {
 			
-			st = new StringTokenizer(br.readLine(), " ");
+			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 			sb.append(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()));
 			sb.append('\n');
 			
