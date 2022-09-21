@@ -1,4 +1,4 @@
-package bj11021;
+package bj11022;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -16,16 +16,19 @@ public class Main {
 		
 		int t = Integer.parseInt(br.readLine());
 		
-		for(int i=1; i<=t; i++) {
-			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-			bw.write("Case #"+i+": ");
-			bw.write(Integer.parseInt(st.nextToken())+Integer.parseInt(st.nextToken())+"\n");
-		}
-		br.close();
+		StringTokenizer st;
 		
+		for(int i=1; i<=t; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			bw.write("Case #"+i+": ");
+			
+			int a = Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
+			bw.write(a+" + "+b+" = "+(a+b)+"\n");
+		}
 		bw.flush();
 		bw.close();
-		
+		br.close();
 	}
 
 }
