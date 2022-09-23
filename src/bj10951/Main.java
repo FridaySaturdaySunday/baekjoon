@@ -3,9 +3,10 @@ package bj10951;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Main { 
 
 	public static void main(String[] args) throws IOException {
 
@@ -17,13 +18,16 @@ public class Main {
 		
 		String str;
 		
-		while((str = br.readLine()) != null) {
+		while( (str = br.readLine()) != null) {
 			
-			st = new StringTokenizer(str, " ");
-			int a = Integer.parseInt(st.nextToken());
-			int b = Integer.parseInt(st.nextToken());
-			sb.append(a+b).append("\n");
-			
+			try {
+				st = new StringTokenizer(str, " ");
+				int a = Integer.parseInt(st.nextToken()); // NoSuchElementException 발생
+				int b = Integer.parseInt(st.nextToken());
+				sb.append(a+b).append("\n");
+			} catch (NoSuchElementException e) {
+				break;
+			}
 		}
 		System.out.println(sb);
 	}
