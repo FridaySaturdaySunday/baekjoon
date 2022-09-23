@@ -33,7 +33,7 @@ public class Main {
 
 		bw.write("||_/=\\\\__|");
 		
-		bw.flush(); // (=sysout) 출력 후 버퍼 비우기
+		bw.flush(); // 버퍼 비우기
 		bw.close(); // 스트림 종료
 	}
 
