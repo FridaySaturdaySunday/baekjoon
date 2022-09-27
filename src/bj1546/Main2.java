@@ -3,9 +3,10 @@ package bj1546;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Main2 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 
@@ -17,27 +18,18 @@ public class Main {
 		
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 		
-		for(int i=0; i<n; i++) {
+		for(int i=0; i<arr.length; i++) {
 			arr[i] = Double.parseDouble(st.nextToken());
 		}
 		
-		double max = 0.0;
-		for(int i=0; i<n; i++) {
-			if(arr[i] > max) {
-				max = arr[i];
-			}
+		Arrays.sort(arr); // 정렬하면 끝값이 최대값
+		
+		double sum = 0;
+		for(int i=0; i<arr.length; i++) {
+			sum += ((arr[i]/arr[arr.length-1])*100);
 		}
 		
-		for(int i=0; i<n; i++) {
-			arr[i] = (arr[i]/max)*100;
-		}
-		
-		double sum = 0.0;
-		for(int i=0; i<n; i++) {
-			sum += arr[i];
-		}
-		
-		System.out.println(sum/n);
+		System.out.println(sum/arr.length);
 
 	}
 
