@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Main2 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 
@@ -14,15 +14,21 @@ public class Main {
 		
 		int n = Integer.parseInt(br.readLine());
 		
+		// 배열 생성
+		String[] arr = new String[n];
+		for(int i=0; i<n; i++) {
+			arr[i] = br.readLine();
+		}
+		
+		
 		for(int i=0; i<n; i++) {
 
 			int count = 0; // 연속횟수
 			int sum = 0; // 누적합산
 			
-			// getBytes() : 입력 문자열을 byte 단위의 '배열'로 반환시켜주는 메소드
-			for(byte value : br.readLine().getBytes()) {
+			for(int j=0; j<arr[i].length(); j++) {
 				
-				if(value == 'O') {
+				if(arr[i].charAt(j) == 'O') {
 					count++;
 					sum += count;
 				} else {
