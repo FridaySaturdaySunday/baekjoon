@@ -25,10 +25,11 @@ public class Main {
 			double sum = 0;
 			for(int j=0; j<n; j++) {
 				// 배열 생성
-				arr[j] = Integer.parseInt(st.nextToken());
-				// 평균구하기
-				sum += arr[i];
+				int val = Integer.parseInt(st.nextToken()); // 토큰 먼저 변수에 담기.
+				arr[j] = val; // 그 다음에 배열에 대입.
+				sum += val;
 			}
+			// 평균구하기
 			double avg = sum / n;
 		
 			double count = 0;
@@ -44,7 +45,6 @@ public class Main {
 			System.out.printf("%.3f%%\n", percent*100);
 		}
 		
-		br.close();
 		
 	}
 
