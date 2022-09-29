@@ -20,14 +20,14 @@ public class Main {
 			
 			int n = Integer.parseInt(st.nextToken());
 			
-			int[] arr = new int[n];
+			double[] arr = new double[n];
 			
 			double sum = 0;
 			for(int j=0; j<n; j++) {
 				// 배열 생성
 				arr[j] = Integer.parseInt(st.nextToken());
 				// 평균구하기
-				sum += (double)arr[i];
+				sum += arr[i];
 			}
 			double avg = sum / n;
 		
