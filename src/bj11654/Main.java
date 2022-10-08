@@ -9,6 +9,7 @@ public class Main {
 
 		Scanner sc = new Scanner(System.in);
 		
+		// 'A'는 아스키 코드로 65
 		int ch = sc.next().charAt(0); // 어떤 타입이 입력되든 char형으로 변환 후 int형 변수에 저장
 		
 		System.out.println(ch);
