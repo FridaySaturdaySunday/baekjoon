@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main { // 다시
+public class Main { // 다시 TODO
 
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	
