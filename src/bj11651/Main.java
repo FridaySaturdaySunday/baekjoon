@@ -4,6 +4,7 @@ import java.util.*;
 import java.io.*;
 
 public class Main {
+	
 	static int arr[][];
 
 	public static void main(String[] args) throws Exception {
