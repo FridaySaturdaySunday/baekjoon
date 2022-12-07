@@ -22,6 +22,7 @@ public class Main {
 		} else {
 			System.out.println((a / (c - b)) + 1);
 		}
+		
 		// 판매량 n
 		// 총 수입과 총 비용이 같아지는 지점 구한다면
 		// nc = a + nb
